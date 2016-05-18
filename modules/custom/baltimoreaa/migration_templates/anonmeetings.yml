@@ -20,7 +20,7 @@ process:
         w: womens
         s: smoking
         m: mens
-        yp: youngpeoples
+        yp: young
         g: gay
       mType:
         discussion: discussion
@@ -37,7 +37,7 @@ process:
         bb: [ literature, bigbook ]
         traditions: traditions
       mAccess:
-       h: handicap
+       h: wheelchair
       mNotes:
         gay: gay
         spanish: spanish
