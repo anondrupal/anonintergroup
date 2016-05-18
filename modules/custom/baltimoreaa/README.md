@@ -10,14 +10,20 @@ drush en -y baltimoreaa
 
 # Import CSV data
 
-* update the csv file in modules/baltimoreaa_migrate/baltimoreaa.csv
-* enable the migrate module
+Because baltimoreaa is an example in anonmigrate, the migration_templates
+here don't need to exist. However, the example is just that, only an
+example. We maintain the actual migration templates here.
+
+The tag here is 'baltimoreaa'. The tag in the examples is 'baltimoreaa-example'.
+
+* update the CSV file. Then run:
 ```
-drush en -y baltimoreaa_migrate
+drush enable -y anonmigrate
+drush script 'anonmigrate_import("baltimoreaa")'
 ```
 * uninstall the migrate module now that it is no longer needed.
 ```
-drush pmu -y baltimoreaa_migrate
+drush pmu -y anonmigrate
 ```
 
 ## See also

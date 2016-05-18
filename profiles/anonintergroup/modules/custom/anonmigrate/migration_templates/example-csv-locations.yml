@@ -1,9 +1,12 @@
-id: anonlocations
-label: Import locations
-migration_tags: [ baltimoreaa ]
+id: example_csv_locations
+label: Import Example CSV Locations
+migration_tags: [ example-csv ]
 source:
-  plugin: baltimoreaa_csv
-  keys: [ mAdd1, mAdd2, mCity, mZip ]
+  plugin: anonintergroup_csv
+  keys:
+    id: [ mAdd1, mAdd2, mCity, mZip ]
+    day: mDayNo
+  path: profiles/anonintergroup/modules/custom/anonmigrate/example-data/example.csv
 process:
   name: mName
   field_address/country_code:
