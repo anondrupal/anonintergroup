@@ -1,0 +1,5 @@
+name: Anonymous Intergroup .org site
+type: module
+description: Anonymous Intergroup .org demo site
+core: 8.x
+package: anonintergrouporg
